@@ -5,21 +5,21 @@ class Uplate < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/uplate/uplate/releases/download/v0.0.1/uplate-aarch64-apple-darwin.tar.xz"
-      sha256 "b8a6a5c788ac1ffbd646b9123b079a240bbf2b2a2d06cb4c5c9c731fac29b0b1"
+      sha256 "b9766f5ea7c5ba4ca40ed6d8bccc081ed5f0bbb1b2fb4b40a79813475693b13b"
     end
     if Hardware::CPU.intel?
       url "https://github.com/uplate/uplate/releases/download/v0.0.1/uplate-x86_64-apple-darwin.tar.xz"
-      sha256 "05a18a96f018a88ca6baba28ec873c08aa1e8f05d29216ebdf55866c8b325c14"
+      sha256 "8526748c9cc8caa9fc86c1af49fd581d5fc010869c63a168934b7c80775cba62"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/uplate/uplate/releases/download/v0.0.1/uplate-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "98df346395c641850a6ebbf30d9751869e7a9871fcf59ac065bbd9778872e7a9"
+      sha256 "61cc41ab7a1de6a0df8f049f36808c397350d95ce5d9d78293f5a210a9050956"
     end
     if Hardware::CPU.intel?
       url "https://github.com/uplate/uplate/releases/download/v0.0.1/uplate-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "0774f97b7335b6d95d9b036dc4067e6c356b1179e53a5c6c6da40b36c13d320d"
+      sha256 "e21d9e7162e4d08d8930d7dffbb56c42d007f1e29b48e5c2d2e765d50ba2b69b"
     end
   end
   license "MIT"
