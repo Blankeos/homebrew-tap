@@ -1,25 +1,25 @@
 class Crabenv < Formula
   desc "The simplest, opinionated way to keep .env files, schemas, and examples aligned."
   homepage "https://github.com/blankeos/crabenv"
-  version "0.0.2"
+  version "0.0.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/blankeos/crabenv/releases/download/v0.0.2/crabenv-aarch64-apple-darwin.tar.xz"
-      sha256 "5513273d0b0cc1bb385f93e6b67f23aaa635c5c94f3cbafd27170ad51d3a70cf"
+      url "https://github.com/blankeos/crabenv/releases/download/v0.0.3/crabenv-aarch64-apple-darwin.tar.xz"
+      sha256 "53185a7a15a52df946a24a0cf281ae268b8f0300aa16f6dca9bb7dd9167d6143"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/blankeos/crabenv/releases/download/v0.0.2/crabenv-x86_64-apple-darwin.tar.xz"
-      sha256 "dad67444f0e9499214baab52ce74ed2d18225e8fe130d6d07e1addc6f1833e40"
+      url "https://github.com/blankeos/crabenv/releases/download/v0.0.3/crabenv-x86_64-apple-darwin.tar.xz"
+      sha256 "62de01d4afb58130e693ca65dab20830627b728e59efca38bacd55e48b1f91cb"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/blankeos/crabenv/releases/download/v0.0.2/crabenv-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "19d155ac33657f80b0675af4603bb7fec98e8adc9ffa929bb4e20f0335316fed"
+      url "https://github.com/blankeos/crabenv/releases/download/v0.0.3/crabenv-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "e5a7f13348da5addd71e16b947f897ad1da0fa48dd2eedff697f9290801b9f91"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/blankeos/crabenv/releases/download/v0.0.2/crabenv-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "cbbdfd0c16781a8284b64bc13317264d7614d3a7f24a637ccfccdd3a46b5dfd9"
+      url "https://github.com/blankeos/crabenv/releases/download/v0.0.3/crabenv-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "7f2aeb2e9c7ee21fd1a8bea313be59842da27d89e126acffca9e714c01d95ba1"
     end
   end
   license "MIT"
