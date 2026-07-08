@@ -1,25 +1,25 @@
 class Cftun < Formula
   desc "A tiny Rust CLI that turns Cloudflare Tunnel into a free, persistent ngrok alternative for webhooks."
   homepage "https://github.com/blankeos/cftun"
-  version "0.0.2"
+  version "0.0.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/blankeos/cftun/releases/download/v0.0.2/cftun-aarch64-apple-darwin.tar.xz"
-      sha256 "52ba0b45a5f20bea600f3af787bb51269ce9d5e0307f957307d75723e6e4830d"
+      url "https://github.com/blankeos/cftun/releases/download/v0.0.3/cftun-aarch64-apple-darwin.tar.xz"
+      sha256 "63dcdfc055ccfd6b9b257d074637a6390f93d0a9a7fce926352b825358cada89"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/blankeos/cftun/releases/download/v0.0.2/cftun-x86_64-apple-darwin.tar.xz"
-      sha256 "3c57be8bdd2db9d94edc7f0bbfd9171aacacbb92ab73b215bc9b51a38698384d"
+      url "https://github.com/blankeos/cftun/releases/download/v0.0.3/cftun-x86_64-apple-darwin.tar.xz"
+      sha256 "fa3f4d0649f3563fd7b0271c711d3419d0d796e54e2165143a546a4ad6b22303"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/blankeos/cftun/releases/download/v0.0.2/cftun-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "3ff5b897659c5a9c986473e14b1ff1131a9b5264d0fa7f534cb5aec0ea0d52e0"
+      url "https://github.com/blankeos/cftun/releases/download/v0.0.3/cftun-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "937e21354f3c0c12c760f66d9407eb5b5e5c6fce03d4da2b337a49aee6a346be"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/blankeos/cftun/releases/download/v0.0.2/cftun-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "effedac59df347b62ee6aa1b8b21efe4fa00e64048130b7957828e29805cc838"
+      url "https://github.com/blankeos/cftun/releases/download/v0.0.3/cftun-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "6ee7ef4f87467bf446e69f45a0706797bae5eb8aa8b659a4ea4e9a3634b5a341"
     end
   end
   license "MIT"
