@@ -1,25 +1,25 @@
 class Lazygitrs < Formula
   desc "A faster, memory-safe, more ergonomic slopfork of lazygit"
   homepage "https://github.com/blankeos/lazygitrs"
-  version "0.0.24"
+  version "0.0.25"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/blankeos/lazygitrs/releases/download/v0.0.24/lazygitrs-aarch64-apple-darwin.tar.xz"
-      sha256 "a6289ac36e7fb33226e207a4456631346168c69b4105b4848a59083f3f3f4216"
+      url "https://github.com/blankeos/lazygitrs/releases/download/v0.0.25/lazygitrs-aarch64-apple-darwin.tar.xz"
+      sha256 "73584da40fb8c9b19c146c0194c4736c43d8eb2b365cbb3e5821a891f1e12b70"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/blankeos/lazygitrs/releases/download/v0.0.24/lazygitrs-x86_64-apple-darwin.tar.xz"
-      sha256 "9deff0b3d9e72770601a4746077ceb7c370ba8796707cc2ab63dcf9b6b256147"
+      url "https://github.com/blankeos/lazygitrs/releases/download/v0.0.25/lazygitrs-x86_64-apple-darwin.tar.xz"
+      sha256 "f6fb98bff1faac674dff816d16d98276d654d58c3fa3979b84d4b155b2e124c8"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/blankeos/lazygitrs/releases/download/v0.0.24/lazygitrs-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "7cd23b23501801dc1811fd079a850dc92699a2c7e27c77aa3e389319d75f90c4"
+      url "https://github.com/blankeos/lazygitrs/releases/download/v0.0.25/lazygitrs-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "d8f310f59580909741196cdcaaa28a5d1fd24a899a34d6394b3970cf70f9d7d2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/blankeos/lazygitrs/releases/download/v0.0.24/lazygitrs-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c8a36b44fc22e0f3847d21d3c7ae0b5e5331d2b95665c24683cf3bc6837748b9"
+      url "https://github.com/blankeos/lazygitrs/releases/download/v0.0.25/lazygitrs-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "d9cfc1955d69daa1c22e3689f7e2305da0799a9ac00f80ac7557c8207b47da08"
     end
   end
   license "MIT"
