@@ -1,25 +1,25 @@
 class Crabcode < Formula
   desc "Rust AI CLI Coding Agent with a beautiful terminal UI"
   homepage "https://github.com/blankeos/crabcode"
-  version "0.0.10"
+  version "0.0.11"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/blankeos/crabcode/releases/download/v0.0.10/crabcode-aarch64-apple-darwin.tar.xz"
-      sha256 "d91d1bfe8e468874c8ca42b83a0a42103ab24ba56fdc5696db8eda6dcff79e03"
+      url "https://github.com/blankeos/crabcode/releases/download/v0.0.11/crabcode-aarch64-apple-darwin.tar.xz"
+      sha256 "7393aa258eb35d4c4fddc7c6423753ef8bea1391eb1726d3b8474edfe16bb6af"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/blankeos/crabcode/releases/download/v0.0.10/crabcode-x86_64-apple-darwin.tar.xz"
-      sha256 "f3cc55cf7032c3cf6a1a58837b93296e6f16180c15b9a832e8cc385986eb83e5"
+      url "https://github.com/blankeos/crabcode/releases/download/v0.0.11/crabcode-x86_64-apple-darwin.tar.xz"
+      sha256 "88bf124d1e6d54cef59d7f1deb5cf06111b888700b37aab3a004c9817fc30132"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/blankeos/crabcode/releases/download/v0.0.10/crabcode-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "cb7a87948cafc26c145d6fa5e34699c610df4ca706f83db29847bfaef6244d6f"
+      url "https://github.com/blankeos/crabcode/releases/download/v0.0.11/crabcode-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "5d4a1fb5be3fd5b2a2c62a1559c89afbee05064ddb23bed873e9e786eb49a67e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/blankeos/crabcode/releases/download/v0.0.10/crabcode-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "6eb5d26ae274432877dd7e479fdfc7948b30c884f8118cb5652a45829176e4da"
+      url "https://github.com/blankeos/crabcode/releases/download/v0.0.11/crabcode-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "bbe7c803c34c29dfc732aecb86f288f306e58a25e0231b05ce70d2867b137f76"
     end
   end
   license "MIT"
@@ -48,10 +48,18 @@ class Crabcode < Formula
   end
 
   def install
-    bin.install "crabcode" if OS.mac? && Hardware::CPU.arm?
-    bin.install "crabcode" if OS.mac? && Hardware::CPU.intel?
-    bin.install "crabcode" if OS.linux? && Hardware::CPU.arm?
-    bin.install "crabcode" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "crabcode"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "crabcode"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "crabcode"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "crabcode"
+    end
 
     install_binary_aliases!
 
