@@ -1,25 +1,25 @@
 class Crabcode < Formula
   desc "Rust AI CLI Coding Agent with a beautiful terminal UI"
   homepage "https://github.com/blankeos/crabcode"
-  version "0.0.11"
+  version "0.0.12"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/blankeos/crabcode/releases/download/v0.0.11/crabcode-aarch64-apple-darwin.tar.xz"
-      sha256 "7393aa258eb35d4c4fddc7c6423753ef8bea1391eb1726d3b8474edfe16bb6af"
+      url "https://github.com/blankeos/crabcode/releases/download/v0.0.12/crabcode-aarch64-apple-darwin.tar.xz"
+      sha256 "f003a3124cdf246e73c168cf569a34c3ece12547eb6f8b8d127a305ed41d0162"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/blankeos/crabcode/releases/download/v0.0.11/crabcode-x86_64-apple-darwin.tar.xz"
-      sha256 "88bf124d1e6d54cef59d7f1deb5cf06111b888700b37aab3a004c9817fc30132"
+      url "https://github.com/blankeos/crabcode/releases/download/v0.0.12/crabcode-x86_64-apple-darwin.tar.xz"
+      sha256 "d9cec4a28f3b29745cd2fcf468aade6a6318dd60c73cdf5f60e29216b1b20df8"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/blankeos/crabcode/releases/download/v0.0.11/crabcode-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "5d4a1fb5be3fd5b2a2c62a1559c89afbee05064ddb23bed873e9e786eb49a67e"
+      url "https://github.com/blankeos/crabcode/releases/download/v0.0.12/crabcode-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "0fabeee0ea46345c4979a50f6c8f0ea9c1ecd6cee225ae7cc30ced0601b514e5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/blankeos/crabcode/releases/download/v0.0.11/crabcode-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "bbe7c803c34c29dfc732aecb86f288f306e58a25e0231b05ce70d2867b137f76"
+      url "https://github.com/blankeos/crabcode/releases/download/v0.0.12/crabcode-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "515b2a027361808c1a830e61dd2314422ba38ae6fd2e6df1ca1e32f5b55526f6"
     end
   end
   license "MIT"
