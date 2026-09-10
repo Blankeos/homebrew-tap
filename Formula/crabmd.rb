@@ -1,25 +1,25 @@
 class Crabmd < Formula
   desc "A fast native GPUI markdown writer"
   homepage "https://github.com/Blankeos/crabmd"
-  version "0.0.2"
+  version "0.0.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Blankeos/crabmd/releases/download/v0.0.2/crabmd-aarch64-apple-darwin.tar.xz"
-      sha256 "60f01ec12efb9ec619e960a1d9d65619584455564e4c30881bb23e5ff28c808a"
+      url "https://github.com/Blankeos/crabmd/releases/download/v0.0.3/crabmd-aarch64-apple-darwin.tar.xz"
+      sha256 "1438a10af697287fc496016ba3dde8ef22556ebe3103fc2484307a8576057a92"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Blankeos/crabmd/releases/download/v0.0.2/crabmd-x86_64-apple-darwin.tar.xz"
-      sha256 "22e3de092d4683e83c09d608bef1a70904ca25bc260defc15aba0fa8c65a8c55"
+      url "https://github.com/Blankeos/crabmd/releases/download/v0.0.3/crabmd-x86_64-apple-darwin.tar.xz"
+      sha256 "37057533898ae6dada469f830bc19cea93689854c987a55396f48c0ea00679b5"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Blankeos/crabmd/releases/download/v0.0.2/crabmd-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "99ce7766925fd128ad02824a462e261ce6654acfe7a03f56100d1350ea578ee6"
+      url "https://github.com/Blankeos/crabmd/releases/download/v0.0.3/crabmd-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "ff0924688a2c7feb276f09e2471744db23bedfc8abc0205229cd5897c7321ded"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Blankeos/crabmd/releases/download/v0.0.2/crabmd-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e32f5f188925cac475d97c464baa2c6dff42426fec18bfaf8a4a6791a3c6ba8d"
+      url "https://github.com/Blankeos/crabmd/releases/download/v0.0.3/crabmd-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "7bc7500852e7904435fa872f700eeca9268b0124332724f8e04afb4fbfe5f7ae"
     end
   end
   license "MIT"
