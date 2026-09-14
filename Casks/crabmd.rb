@@ -15,10 +15,6 @@ cask "crabmd" do
     strategy :github_latest
   end
 
-  # The retired formula shipped the same crabmd binary without the app
-  # bundle. Keep the conflict so brew errors clearly instead of forking app
-  # identity (two Dock icons, Spotlight reopen doing nothing).
-  conflicts_with formula: "crabmd"
   depends_on macos: :big_sur
 
   app "CrabMD.app"
