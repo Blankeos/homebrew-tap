@@ -5,21 +5,21 @@
 class HerdrServe < Formula
   desc "Opt-in phone UI — live terminal relay for Herder agents"
   homepage "https://github.com/Blankeos/herdr-serve"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Blankeos/herdr-serve/releases/download/v0.0.1/herdr-serve-x86_64-apple-darwin.tar.xz"
-      sha256 "5b03f8f06d64edc7050fbdc55b11ac6dd2d78e8a821a7acc143986239f7ec890"
+      url "https://github.com/Blankeos/herdr-serve/releases/download/v0.0.2/herdr-serve-x86_64-apple-darwin.tar.xz"
+      sha256 "4c463da909f4a7fb795f9f88442cab81fc6d9ac43ff607c5c23f4c4ba464b60e"
 
       define_method(:install) do
         bin.install "herdr-serve"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Blankeos/herdr-serve/releases/download/v0.0.1/herdr-serve-aarch64-apple-darwin.tar.xz"
-      sha256 "8a160c48e7771977a46e06b405a1ab197986e84fed601a1f99355411f61ac9b3"
+      url "https://github.com/Blankeos/herdr-serve/releases/download/v0.0.2/herdr-serve-aarch64-apple-darwin.tar.xz"
+      sha256 "5c0df59fcb74cea481e475a0891e94b2359656f399563b8aaa767235057c0e35"
 
       define_method(:install) do
         bin.install "herdr-serve"
@@ -29,15 +29,15 @@ class HerdrServe < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Blankeos/herdr-serve/releases/download/v0.0.1/herdr-serve-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "937edb8100f155d27067e852ff744cdbe7d08e0a8a51405fbc3eb3900426823d"
+      url "https://github.com/Blankeos/herdr-serve/releases/download/v0.0.2/herdr-serve-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "fdcb5dd7a5feaa5a4d00815e2468386f6606070ef89cded88aa4f24e2f17227d"
       define_method(:install) do
         bin.install "herdr-serve"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Blankeos/herdr-serve/releases/download/v0.0.1/herdr-serve-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "04146f5bd49213b80e2c95f95c9e2d20873008238879d2348068f329b40a0173"
+      url "https://github.com/Blankeos/herdr-serve/releases/download/v0.0.2/herdr-serve-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "72dbbbb4d171c1e4dc6fc625e353666622c144332ef229b7cf3986fbcb4a86fb"
       define_method(:install) do
         bin.install "herdr-serve"
       end
