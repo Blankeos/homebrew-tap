@@ -1,9 +1,9 @@
 cask "crabmd" do
   arch arm: "aarch64", intel: "x86_64"
 
-  version "0.0.4"
-  sha256 arm:   "fa4b36cc79f4ad27d8b6534853d255246c5d27cd96ae97860592e315d9a4bbd3",
-         intel: "27e4ad17843c57b194dd192a23b64e8fe7d24096eb362522b2b1cc853b7e3252"
+  version "0.0.5"
+  sha256 arm:   "c64f4fecc4c03c21d837752888f966e44ceabd58177a5fb64b035a56b393e015",
+         intel: "5691e3b20231c1a8317fe30cb442868dfb2944293c8bf97be178bf14716c001f"
 
   url "https://github.com/Blankeos/crabmd/releases/download/v#{version}/CrabMD-#{arch}-apple-darwin.zip"
   name "CrabMD"
@@ -15,7 +15,7 @@ cask "crabmd" do
     strategy :github_latest
   end
 
-  depends_on macos: :big_sur
+  depends_on :macos
 
   app "CrabMD.app"
   binary "#{appdir}/CrabMD.app/Contents/MacOS/crabmd", target: "crabmd"
