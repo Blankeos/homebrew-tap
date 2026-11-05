@@ -1,25 +1,25 @@
 class Kondor < Formula
   desc "Find and clear build leftovers (node_modules, target, caches) across all your projects"
   homepage "https://github.com/Blankeos/kondor"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Blankeos/kondor/releases/download/v0.1.1/kondor-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "0b1eb3e5bccb967b2ed7f0efff5fa943883932f265dcc1e85a5e7da60b444e10"
+      url "https://github.com/Blankeos/kondor/releases/download/v0.1.2/kondor-cli-aarch64-apple-darwin.tar.gz"
+      sha256 "b1f9f299028b93642b81f4daab470fa12d40f7603a22a1004f36b8f8e554e744"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Blankeos/kondor/releases/download/v0.1.1/kondor-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "3d69cc11bab4353c184cbb9861cf70e02772e36aff4481c56f30efa7e22f31a5"
+      url "https://github.com/Blankeos/kondor/releases/download/v0.1.2/kondor-cli-x86_64-apple-darwin.tar.gz"
+      sha256 "adb4c933a395489d87556751702f779ff001860cfbb59b08d340471830240490"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Blankeos/kondor/releases/download/v0.1.1/kondor-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "965c7b36455268569ae633edc17a4d7cea90a9ae4689f2bf2e4b513094ff602d"
+      url "https://github.com/Blankeos/kondor/releases/download/v0.1.2/kondor-cli-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "79ecea6388f65d80332d1b9ce57798e300bcd96daed9b95f41ecac9c03bd0774"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Blankeos/kondor/releases/download/v0.1.1/kondor-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f943c7f7ef4e15b9e3bd7a83a36b83fd03b860919de56cd31eba156d7c6f2129"
+      url "https://github.com/Blankeos/kondor/releases/download/v0.1.2/kondor-cli-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ce96c080cbf624b0c3071a03fdb95fc233ee2ebeea85713e166a11e6c21f8ae9"
     end
   end
   license "MIT"
